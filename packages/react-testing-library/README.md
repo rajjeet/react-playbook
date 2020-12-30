@@ -84,4 +84,4 @@ Ran all test suites.
 
 ## Checkout the other React Quick Starters
 Using these starters, I quickly pick up working knowledge of these libraries and implement them with confidence on
- complex projects. [](https://github.com/rajjeet/react-playbook)   
+ complex projects. [Github Repo](https://github.com/rajjeet/react-playbook)   
