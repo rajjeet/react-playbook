@@ -12,6 +12,7 @@ npm run type-check
 ```
 
 ### Prerequisite
+Please checkout the [react-basics](https://github.com/rajjeet/react-playbook/tree/master/packages/react-basic) package to understand the React setup before completing this tutorial. 
 
 ### Step 1: Install
 ```npm install --save-dev typescript ts-loader @types/react @types/react-dom```
