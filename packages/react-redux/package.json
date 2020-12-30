@@ -1,0 +1,39 @@
+{
+  "name": "react-redux",
+  "version": "0.0.0",
+  "description": "A minimalistic React Redux project for learning purposes",
+  "keywords": [
+    "react",
+    "redux"
+  ],
+  "author": "Rajjeet Phull <rajjeet.phull@gmail.com>",
+  "homepage": "https://ortmesh.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajjeet/react-playbook.git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "bugs": {
+    "url": "https://github.com/rajjeet/react-playbook/issues"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "redux": "^4.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
