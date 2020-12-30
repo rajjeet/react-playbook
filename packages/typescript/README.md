@@ -43,7 +43,7 @@ Add `tsconfig.json` to root directory.
 This file lets us add a configuration for the compiling of TypeScript code into JavaScript. 
 
 ### Step 3: Configure Webpack
-Webpack needs to be configured to process TypeScript files. Here are the key changes:
+Webpack needs to be configured to process TypeScript files. Here are the key changes to `webpack.config.js`:
 - add `ts-loader` and test for `ts` and `tsx` files
     ```
     ...
