@@ -9,10 +9,12 @@ I'm routinely adding new packages to repo as I encounter new challenges at work 
   me too.
   
 ## List of Starters
-|Name|Description|
-|-|-|-|
-|react-basic|minimalistic React setup|
-|react-redux|basic setup of Redux with React, commonly used state management library|
-|redux-saga|redux middleware for making async side effects that uses generators|
-|redux-thunk|redux middleware for making async side effects that uses promises|
-|jest-enzyme|most common React testing framework, Jest, alongside a React testing utility library called Enzyme| 
+
+| Name | Description |
+|:-----|:-----|
+| react-basic | minimalistic React setup |
+| react-redux | basic setup of Redux with React, commonly used state management library |
+| redux-saga | redux middleware for making async side effects that uses generators |
+| redux-thunk | redux middleware for making async side effects that uses promises |
+| jest-enzyme | most common React testing framework, Jest, alongside a React testing utility library called Enzyme | 
+
