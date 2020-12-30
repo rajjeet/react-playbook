@@ -22,10 +22,10 @@ Here's for each package is for:
 - `enzyme` is a test helper library that enables us to render React components on a virtual DOM and provides method
  to inspect the DOM tree for specific components and their properties. Think of JQuery but for React components for
   testing. 
-  - `enzyme-adapter-react-16` is an adapter between React and Enzyme. This will be executed before running the tests.
-  - `@types/jest` is types library that provides typing and intellisence for global jest keywords such as `describe
-  ` and `it` in our test file. This makes type safety more robust for type files and provides better IDE support for
-   test files.    
+- `enzyme-adapter-react-16` is an adapter between React and Enzyme. This will be executed before running the tests.
+- `@types/jest` is types library that provides typing and intellisence for global jest keywords such as `describe
+` and `it` in our test file. This makes type safety more robust for type files and provides better IDE support for
+test files.    
 
 ### Step 2: Add Enzyme Adapter for React
 - add test setup file with the enzyme adapter that executes before each test in `./setupTests.js`
