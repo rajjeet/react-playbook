@@ -16,5 +16,8 @@ I'm routinely adding new packages to repo as I encounter new challenges at work 
 | react-redux | basic setup of Redux with React, commonly used state management library |
 | redux-saga | redux middleware for making async side effects that uses generators |
 | redux-thunk | redux middleware for making async side effects that uses promises |
-| jest-enzyme | most common React testing framework, Jest, alongside a React testing utility library called Enzyme | 
+| jest-enzyme | most common React testing framework, Jest, alongside a React testing utility library called Enzyme |
+| react-testing-library | user-centric testing utility for React |
+| typescript | basic setup for TypeScript for React, a type safety system | 
 
+    
