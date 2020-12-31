@@ -1,4 +1,4 @@
-import { TimerEffectsHook } from "./timers";
+import { TimerEffectsHook } from "./index";
 import React from "react";
 import { shallow, mount } from "enzyme";
 import { act } from "react-dom/test-utils";

@@ -1,5 +1,5 @@
 import { render, unmountComponentAtNode } from "react-dom";
-import { TimerEffectsHook } from "./timers";
+import { TimerEffectsHook } from "./index";
 import React from "react";
 import { act } from "react-dom/test-utils";
 

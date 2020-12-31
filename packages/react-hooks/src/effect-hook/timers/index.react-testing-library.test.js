@@ -1,5 +1,5 @@
 import { render, screen, act } from "@testing-library/react";
-import { TimerEffectsHook } from "./timers";
+import { TimerEffectsHook } from "./index";
 import React from "react";
 
 describe('Timers > React Testing Library', function () {
