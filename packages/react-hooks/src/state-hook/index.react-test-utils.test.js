@@ -3,7 +3,7 @@ import { act } from "react-dom/test-utils";
 import { StateHook } from "./index";
 import React from "react";
 
-describe('State Hook', function () {
+describe('State Hook > React Test Utils', function () {
   let container = null;
   beforeEach(() => {
     container = document.createElement("div");
@@ -14,6 +14,13 @@ describe('State Hook', function () {
     container.remove();
     container = null;
   })
+  it('should initialize count with 0', function () {
+    act(() => {
+      render(<StateHook/>, container);
+    });
+    const countDisplay = document.querySelector("[id=count-display]");
+    expect(countDisplay.innerHTML).toBe("Count: 0")
+  });
   it('should increment count when increment button is clicked', function () {
     act(() => {
       render(<StateHook/>, container);
