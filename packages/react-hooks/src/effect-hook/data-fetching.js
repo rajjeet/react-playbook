@@ -21,13 +21,13 @@ export const DataFetchingEffectHook = () => {
 
   return (
     <>
-      <h4>Data Fetching</h4>
+      <h3>Data Fetching</h3>
       {error && <b id={"error"}>Error!</b>}
       {isLoading && <div>Loading...</div>}
       {
         comments.length > 0 && (
           <div>
-            <h3>Comments:</h3>
+            <h5>Comments:</h5>
             {comments.map(c => <div key={c.id}>{c.text}</div>)}
           </div>
         )
