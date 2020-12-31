@@ -14,16 +14,21 @@
     "url": "git+https://github.com/rajjeet/react-playbook.git"
   },
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "run-p client server",
     "build": "webpack",
-    "test": "jest"
+    "test": "jest",
+    "client": "webpack-dev-server --open",
+    "server": "json-server --watch mocks/comments.json --port 3001 --delay 1000"
   },
   "bugs": {
     "url": "https://github.com/rajjeet/react-playbook/issues"
   },
   "dependencies": {
+    "json-server": "^0.16.3",
+    "npm-run-all": "^4.1.5",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "regenerator-runtime": "^0.13.7"
   },
   "devDependencies": {
     "@babel/core": "^7.7.5",
@@ -34,8 +39,12 @@
     "babel-loader": "^8.0.6",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^26.6.3",
+    "react-testing-library": "^8.0.1",
     "webpack": "^4.41.3",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["<rootDir>/setup-tests.js"]
   }
 }

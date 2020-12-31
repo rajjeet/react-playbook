@@ -1,0 +1,16 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "text": "That was a great video!"
+    },
+    {
+      "id": 2,
+      "text": "That could have been done better :("
+    },
+    {
+      "id": 3,
+      "text": "Why are we mocking comments?"
+    }
+  ]
+}
