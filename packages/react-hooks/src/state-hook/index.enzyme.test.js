@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import { StateHook } from "./index";
 
-describe('State Hook > React Testing Library', function () {
+describe('State Hook > Enzyme', function () {
   it('should initialize count with 0', function () {
     const wrapper = shallow(<StateHook/>);
     expect(wrapper.find('[id="count-display"]').text()).toBe("Count: 0");
