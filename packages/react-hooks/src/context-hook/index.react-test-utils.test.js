@@ -1,0 +1,47 @@
+import React from "react";
+import { Message, ThemeContext } from "./index";
+import { act } from "react-dom/test-utils";
+import { unmountComponentAtNode, render } from "react-dom";
+
+describe('Context Hook > React Test Utils', function () {
+  let container = null;
+  beforeEach(() => {
+    container = document.createElement("div");
+    document.body.appendChild(container);
+  });
+  afterEach(() => {
+    unmountComponentAtNode(container);
+    container.remove();
+    container = null;
+    jest.clearAllMocks();
+  })
+  it('should show the color specified by theme context', function () {
+    const spyInstance = jest.spyOn(React, "useContext")
+      .mockImplementation(() => ({
+        foreground: "#ffffff",
+        background: "#222222"
+      }));
+    act(() => {
+      render(<Message/>, container);
+    });
+    expect(spyInstance).toBeCalled();
+    const { color, backgroundColor } = container.querySelector("span").style
+    expect(color).toBe("rgb(255, 255, 255)");
+    expect(backgroundColor).toBe("rgb(34, 34, 34)")
+  });
+  it('should show the color specified by theme context (Alternative)', function () {
+    act(() => {
+      render(
+        <ThemeContext.Provider value={{
+          foreground: "#ffffff",
+          background: "#222222"
+        }}>
+          <Message/>
+        </ThemeContext.Provider>,
+        container);
+    });
+    const { color, backgroundColor } = container.querySelector("span").style
+    expect(color).toBe("rgb(255, 255, 255)");
+    expect(backgroundColor).toBe("rgb(34, 34, 34)")
+  });
+});
