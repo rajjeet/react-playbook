@@ -1,4 +1,4 @@
-import React, {useState, useContext, createContext} from 'react';
+import React, { useState, useContext, createContext } from 'react';
 
 const themes = {
   light: {
@@ -23,10 +23,22 @@ export const Message = () => {
   );
 }
 
-const Button = ({ onClick }) => {
-  const { foreground, background } = useContext(ThemeContext);
-  return <button onClick={onClick} style={{ backgroundColor: foreground, color: background, padding: '8px' }}>Switch
-    Theme</button>
+export const Button = ({ onClick }) => {
+  return (
+    <ThemeContext.Consumer>
+      {
+        (props) => (
+          <button onClick={onClick} style={{
+            backgroundColor: props.foreground,
+            color: props.background,
+            padding: '8px'
+          }}>
+            Switch Theme
+          </button>
+        )
+      }
+    </ThemeContext.Consumer>
+  );
 }
 
 export const ContextHook = () => {
