@@ -8,6 +8,7 @@ describe('Timers > React Test Utils', function () {
   beforeEach(() => {
     jest.useFakeTimers();
     container = document.createElement("div");
+    document.body.appendChild(container);
   })
   afterEach(() => {
     jest.clearAllTimers();

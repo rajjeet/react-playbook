@@ -26,7 +26,7 @@ describe('Data Fetching > Enzyme', function () {
 
   const waitForComponentToPaint = async (wrapper) => {
     await act(async () => {
-      await new Promise(resolve => setTimeout(resolve, 0));
+      await new Promise(setImmediate);
       wrapper.update();
     });
   };
