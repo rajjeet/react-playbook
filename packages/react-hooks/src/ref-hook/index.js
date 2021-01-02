@@ -1,11 +1,11 @@
 import React from 'react';
-import { PersistentStateRefHook } from "./persistent-state";
+import { MutableStateRefHook } from "./mutable-state";
 
 export const RefHooks = () => {
   return (
     <div>
       <h2>Ref Hooks</h2>
-      <PersistentStateRefHook />
+      <MutableStateRefHook />
     </div>
   );
 };

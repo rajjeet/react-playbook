@@ -1,5 +1,5 @@
 import { render, unmountComponentAtNode } from "react-dom";
-import { PersistentStateRefHook } from "./index";
+import { MutableStateRefHook } from "./index";
 import React from "react";
 import { act, Simulate } from "react-dom/test-utils";
 
@@ -16,7 +16,7 @@ describe('Persistent State Ref Hook > React Test Utils', function () {
   })
   it('should increment render count for each change action in input field', function () {
     act(() => {
-      render(<PersistentStateRefHook/>, container);
+      render(<MutableStateRefHook/>, container);
     })
     const textInput = container.querySelector('input');
     ["a", "b", "c"].forEach(char => {
