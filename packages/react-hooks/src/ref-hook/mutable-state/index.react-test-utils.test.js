@@ -3,7 +3,7 @@ import { MutableStateRefHook } from "./index";
 import React from "react";
 import { act, Simulate } from "react-dom/test-utils";
 
-describe('Persistent State Ref Hook > React Test Utils', function () {
+describe('Mutable State Ref Hook > React Test Utils', function () {
   let container = null;
   beforeEach(() => {
     container = document.createElement("div");
