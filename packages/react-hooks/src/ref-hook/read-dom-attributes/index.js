@@ -10,7 +10,6 @@ export const ReadDOMAttributesRefHook = () => {
     };
     if (boxRef && boxRef.current){
       setBoxWidth(boxRef.current.clientWidth)
-      console.log('box clientwidth', boxRef.current.clientWidth)
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
     }
