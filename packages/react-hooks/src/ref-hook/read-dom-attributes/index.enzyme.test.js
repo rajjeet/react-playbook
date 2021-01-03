@@ -1,7 +1,7 @@
-import { ReadDOMAttributesRefHook } from "./index";
 import React from "react";
 import { mount } from "enzyme";
 import { act } from "react-dom/test-utils";
+import { ReadDOMAttributesRefHook } from "./index";
 
 describe('Read DOM Attributes Ref Hook > Enzyme', function () {
   beforeEach(() => {

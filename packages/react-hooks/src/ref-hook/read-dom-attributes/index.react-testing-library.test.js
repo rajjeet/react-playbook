@@ -1,7 +1,7 @@
-import { render, screen, fireEvent } from "@testing-library/react";
-import { ReadDOMAttributesRefHook } from "./index";
 import React from "react";
+import { render, screen } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
+import { ReadDOMAttributesRefHook } from "./index";
 
 describe('Read DOM Attributes Ref Hook > React Testing Library', function () {
   it('should display the initial box width in text', function () {

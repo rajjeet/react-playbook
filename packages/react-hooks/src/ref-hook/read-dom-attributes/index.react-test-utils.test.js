@@ -1,7 +1,7 @@
-import { render, unmountComponentAtNode } from "react-dom";
-import { ReadDOMAttributesRefHook } from "./index";
 import React from "react";
+import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
+import { ReadDOMAttributesRefHook } from "./index";
 
 describe('Read DOM Attributes Ref Hook > React Test Utils', function () {
   let container = null;

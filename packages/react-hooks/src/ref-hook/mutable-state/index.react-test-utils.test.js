@@ -1,7 +1,7 @@
-import { render, unmountComponentAtNode } from "react-dom";
-import { MutableStateRefHook } from "./index";
 import React from "react";
+import { render, unmountComponentAtNode } from "react-dom";
 import { act, Simulate } from "react-dom/test-utils";
+import { MutableStateRefHook } from "./index";
 
 describe('Mutable State Ref Hook > React Test Utils', function () {
   let container = null;
