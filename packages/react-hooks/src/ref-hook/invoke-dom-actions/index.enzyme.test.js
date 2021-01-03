@@ -12,7 +12,7 @@ describe('Invoke DOM Actions Ref Hook > Enzyme', function () {
     const div = document.getElementById('container');
     if(div) document.body.removeChild(div);
   })
-  it('should update the box width when window is resized', function () {
+  it('should focus on the input field after clicking the button', function () {
     const wrapper = mount(<InvokeDOMActionsRefHook/>, {
       attachTo: document.getElementById('container')
     })
