@@ -5,6 +5,7 @@ import { EffectHooks } from "./effect-hook";
 import "regenerator-runtime";
 import { ContextHook } from "./context-hook";
 import { RefHooks } from "./ref-hook";
+import { MemoHook } from "./memo-hook";
 
 const App = () => (
   <>
@@ -13,6 +14,7 @@ const App = () => (
       <EffectHooks />
       <ContextHook />
       <RefHooks />
+      <MemoHook />
   </>
 );
 
