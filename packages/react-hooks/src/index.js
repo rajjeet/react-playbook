@@ -8,6 +8,7 @@ import { RefHooks } from "./ref-hook";
 import { MemoHook } from "./memo-hook";
 import { ReducerHook } from "./reducer-hook";
 import { CallbackHook } from "./callback-hook";
+import { ImperativeHandleHook } from "./imperative-handle-hook";
 
 const App = () => (
   <>
@@ -19,6 +20,7 @@ const App = () => (
     <MemoHook/>
     <ReducerHook/>
     <CallbackHook/>
+    <ImperativeHandleHook />
   </>
 );
 
