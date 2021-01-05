@@ -6,6 +6,7 @@ import "regenerator-runtime";
 import { ContextHook } from "./context-hook";
 import { RefHooks } from "./ref-hook";
 import { MemoHook } from "./memo-hook";
+import { ReducerHook } from "./reducer-hook";
 
 const App = () => (
   <>
@@ -15,6 +16,7 @@ const App = () => (
       <ContextHook />
       <RefHooks />
       <MemoHook />
+      <ReducerHook />
   </>
 );
 
