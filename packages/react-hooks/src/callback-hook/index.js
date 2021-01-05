@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 
 export const CallbackHook = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  // only create this function once for the lifetime of this component
   const getMousePosition = useCallback((e) => {
     setScrollPosition(`(${e.offsetX},${e.offsetY})`);
   }, []);
