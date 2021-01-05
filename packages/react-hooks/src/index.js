@@ -7,17 +7,19 @@ import { ContextHook } from "./context-hook";
 import { RefHooks } from "./ref-hook";
 import { MemoHook } from "./memo-hook";
 import { ReducerHook } from "./reducer-hook";
+import { CallbackHook } from "./callback-hook";
 
 const App = () => (
   <>
     <h1>React Hooks</h1>
-      <StateHook />
-      <EffectHooks />
-      <ContextHook />
-      <RefHooks />
-      <MemoHook />
-      <ReducerHook />
+    <StateHook/>
+    <EffectHooks/>
+    <ContextHook/>
+    <RefHooks/>
+    <MemoHook/>
+    <ReducerHook/>
+    <CallbackHook/>
   </>
 );
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
