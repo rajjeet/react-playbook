@@ -12,33 +12,15 @@ npm test
 npm start
 ```
     
-## `useState`: The State Hook
-Using the `useState` hook, we can manage internal state within a React component. The most basic example of `useState
-` is a simple counter.
+|React Hook|Use Cases|
+|---|---|
+|`useState`| Track state within the component |
+|`useEffect`| Perform side effects other than rendering such as data fetching and timer-based actions | 
+|`useContext`| Alternative to prop-drilling; pass down data to component tree without specifying props at every level
+ of the component tree. Uses a provider and consumer relationship |
+|`useRef`| Instance variable for component that doesn't cause a re-render when it changes. Also used for referencing DOM elements for imperative control. |
+|`useMemo`| Prevent re-renders from re-computing values derived from expensive functions by storing previously computed values in memory. Only re-compute the variable if one of its dependencies changes |
+|`useCallback`| Prevent re-renders from re-initializing local functions by saving the function in memory and only re-initializing it if its dependencies change. |
+|`useReducer`| Alternative to `useState` for storing component-level state. Useful for tracking complex state objects |
+|`useImperativeHandle`| Allows components to provide a specific interface for the forwarded ref | 
 
-`src/state-hook/data-fetching.js` 
-```
-import React, { useState } from 'react';
-
-export const StateHook = () => {
-  const [count, setCount] = useState(0);
-  return (
-    <>
-      <h2>State Hook</h2>
-      <div id={"count-display"}>Count: {count}</div>
-      <button id={"increment-btn"} onClick={() => setCount(count + 1)}>Increment</button>
-    </>
-  );
-};
-```
-Using `useState(0)`, we pass in the initial state to the hook function and get back: (1) state in the first index and
-(2) a setter function in the second index. We use the setter function in `button` click handler to modify the state and
- display the state within the `div`. 
- 
- ### Testing
- See `src/state-hook/index.react-test-utils.test.js` for the test of `useState`. We simply create a mouse event of type _click_ for the
-  `button`. After the act phase, the DOM updates, and we can assert that the count display shows in the incremented
-   state. It's important to test the resulting behaviour of the state change (i.e. the count display being increment
-   ) rather than testing the internal state of the component, which would be testing implementation. Testing
-    implementation leads to brittle test, as test fail easily when the underlying implementation changes, while
-     keeping the behaviour the same.`
