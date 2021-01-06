@@ -16,8 +16,7 @@ npm start
 |---|---|
 |`useState`| Track state within the component |
 |`useEffect`| Perform side effects other than rendering such as data fetching and timer-based actions | 
-|`useContext`| Alternative to prop-drilling; pass down data to component tree without specifying props at every level
- of the component tree. Uses a provider and consumer relationship |
+|`useContext`| Alternative to prop-drilling; pass down data to component tree without specifying props at every level of the component tree. Uses a provider and consumer relationship |
 |`useRef`| Instance variable for component that doesn't cause a re-render when it changes. Also used for referencing DOM elements for imperative control. |
 |`useMemo`| Prevent re-renders from re-computing values derived from expensive functions by storing previously computed values in memory. Only re-compute the variable if one of its dependencies changes |
 |`useCallback`| Prevent re-renders from re-initializing local functions by saving the function in memory and only re-initializing it if its dependencies change. |
