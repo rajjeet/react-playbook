@@ -1,6 +1,6 @@
 # `react-hooks`
 
-This guide explores each React hook and how it can be correctly unit tested using React Test Utils.
+This guide explores each React hook, and presents testing techniques for some. 
 
 ## Usage
 
@@ -22,5 +22,7 @@ npm start
 |`useMemo`| Prevent re-renders from re-computing values derived from expensive functions by storing previously computed values in memory. Only re-compute the variable if one of its dependencies changes |
 |`useCallback`| Prevent re-renders from re-initializing local functions by saving the function in memory and only re-initializing it if its dependencies change. |
 |`useReducer`| Alternative to `useState` for storing component-level state. Useful for tracking complex state objects |
-|`useImperativeHandle`| Allows components to provide a specific interface for the forwarded ref | 
+|`useImperativeHandle`| Allows components to provide a specific interface for the forwarded ref |
+|`useLayoutEffect` | Identical to `useEffect` but fires synchronously after DOM changes. Use this if it the effect must run before the first render, but it can cause blocking. |
+|`useDebugValue` | Used for displaying labels next to custom hooks in React DevTools |  
 
