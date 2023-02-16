@@ -1,7 +1,2 @@
-.idea/
-.vscode/
+build 
 
-node_modules/
-dist/
-
-**/*.log
